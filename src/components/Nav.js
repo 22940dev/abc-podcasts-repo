@@ -48,7 +48,7 @@ const Nav = () => (
     <div>
       <img src={logo} alt="Logo" />
 
-      <a href="https://github.com/iRaul/podcasts-repo" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/fu4303/podcasts-repo" target="_blank" rel="noopener noreferrer">
         Contribute
       </a>
     </div>
