@@ -16,10 +16,11 @@ import productivity from '../data/productivity';
 import startup from '../data/startup';
 import design from '../data/design';
 import dev from '../data/dev';
+import sports from '../data/sports';
 
 import './Tabs.css';
 
-const all = [...design, ...dev, ...startup, ...productivity];
+const all = [...design, ...dev, ...startup, ...productivity, ...sports];
 
 randomPodcast(all);
 
@@ -39,6 +40,7 @@ class App extends Component {
               <Tab>Dev</Tab>
               <Tab>Startup</Tab>
               <Tab>Productivity</Tab>
+              <Tab>Sports</Tab>
             </TabList>
 
             <TabPanel>
@@ -59,6 +61,10 @@ class App extends Component {
 
             <TabPanel>
               <PodcastList items={productivity} />
+            </TabPanel>
+
+            <TabPanel>
+              <PodcastList items={sports} />
             </TabPanel>
           </Tabs>
 
